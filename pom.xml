@@ -8,12 +8,30 @@
     <artifactId>com.evc.freetime</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <description>For free time work</description>
     <modules>
         <module>demo-center</module>
         <module>demo-util</module>
         <module>demo-application</module>
         <module>demo-simple</module>
     </modules>
+    <name>free-time-project</name>
+    <developers>
+        <developer>
+            <name>ChangleLee</name>
+            <email>wnlirong@163.com</email>
+        </developer>
+    </developers>
+    <url>https://github.com/smileMrLee/free-time-pro.git</url>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <pomversion>x.0.0-snapshot</pomversion>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
 
 
 </project>
