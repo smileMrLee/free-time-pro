@@ -10,11 +10,19 @@
     <option name="pathToConfigFileJava" value="/usr/local/tmp/eclipse&amp;intellij-codestyle.xml" />
     <option name="selectedJavaProfile" value="GoogleStyle" />
   </component>
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/demo-img-watermark/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
