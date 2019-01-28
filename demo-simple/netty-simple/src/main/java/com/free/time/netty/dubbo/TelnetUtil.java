@@ -1,4 +1,4 @@
-package com.free.time.netty;
+package com.free.time.netty.dubbo;
 
 import com.google.common.base.Throwables;
 import io.netty.bootstrap.Bootstrap;
