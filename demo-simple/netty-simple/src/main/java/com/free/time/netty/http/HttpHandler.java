@@ -3,7 +3,6 @@ package com.free.time.netty.http;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.handler.codec.AsciiString;
 import io.netty.handler.codec.http.*;
 import lombok.extern.slf4j.Slf4j;
 
@@ -16,6 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 public class HttpHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
 
     private static final String TEST_MSG = "hello netty http";
+/*
 
     private AsciiString contentType = HttpHeaderValues.TEXT_PLAIN;
 
@@ -29,6 +29,7 @@ public class HttpHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
 
         ctx.write(response);
     }
+*/
 
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
@@ -41,5 +42,9 @@ public class HttpHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         log.error("channel error", cause);
         if (null != ctx) ctx.close();
+    }
+
+    protected void channelRead0(ChannelHandlerContext channelHandlerContext, FullHttpRequest fullHttpRequest) throws Exception {
+
     }
 }

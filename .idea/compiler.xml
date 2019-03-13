@@ -22,6 +22,7 @@
       <module name="ehcache-simple" target="1.5" />
       <module name="free-time-pro" target="1.5" />
       <module name="netty-simple" target="1.5" />
+      <module name="netty-websocket-simple" target="1.5" />
       <module name="nio-simple" target="1.5" />
     </bytecodeTargetLevel>
   </component>

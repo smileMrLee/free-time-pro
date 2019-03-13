@@ -17,6 +17,7 @@
         <module>ehcache-simple</module>
         <module>nio-simple</module>
         <module>netty-simple</module>
+        <module>netty-websocket-simple</module>
     </modules>
 
 

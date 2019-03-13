@@ -19,6 +19,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/demo-img-watermark/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-simple/netty-websocket-simple/pom.xml" />
       </set>
     </option>
   </component>
