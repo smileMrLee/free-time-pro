@@ -13,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 
 
 import java.util.Date;
+import java.util.logging.Level;
 
 import static io.netty.handler.codec.http.HttpHeaders.isKeepAlive;
 import static io.netty.handler.codec.http.HttpHeaders.setContentLength;
@@ -46,8 +47,8 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
 
     }
 
-    private void handleWebsocketFrame(ChannelHandlerContext ctx, WebSocketFrame webSocketFrame){
-        // 判断是否是关闭链路的指令
+    private void handleWebsocketFrame(ChannelHandlerContext ctx, WebSocketFrame frame){
+        /*// 判断是否是关闭链路的指令
         if (webSocketFrame instanceof CloseWebSocketFrame){
             handshaker.close(ctx.channel(), (CloseWebSocketFrame) webSocketFrame.retain());
             return;
@@ -67,7 +68,38 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
         // 返回应答消息
         String request = ((TextWebSocketFrame) webSocketFrame).text();
         log.info("{} received {}", ctx.channel(), request);
-        ctx.channel().write(new TextWebSocketFrame(String.format("%s , 欢迎使用netty Websocket 服务，现在时刻：%s", request, new Date().toString())));
+        //ctx.channel().write(new TextWebSocketFrame(String.format("%s , 欢迎使用netty Websocket 服务，现在时刻：%s", request, new Date().toString())));
+*/
+      /*  ctx.channel().write(
+                new TextWebSocketFrame(request
+                        + " , 欢迎使用Netty WebSocket服务，现在时刻："
+                        + new java.util.Date().toString()));*/
+
+        // 判断是否是关闭链路的指令
+        if (frame instanceof CloseWebSocketFrame) {
+            handshaker.close(ctx.channel(),
+                    (CloseWebSocketFrame) frame.retain());
+            return;
+        }
+        // 判断是否是Ping消息
+        if (frame instanceof PingWebSocketFrame) {
+            ctx.channel().write(
+                    new PongWebSocketFrame(frame.content().retain()));
+            return;
+        }
+        // 本例程仅支持文本消息，不支持二进制消息
+        if (!(frame instanceof TextWebSocketFrame)) {
+            throw new UnsupportedOperationException(String.format(
+                    "%s frame types not supported", frame.getClass().getName()));
+        }
+
+        // 返回应答消息 TODO 低于5.0版本，页面无法收到该返回消息
+        String request = ((TextWebSocketFrame) frame).text();
+        log.info(String.format("%s received %s", ctx.channel(), request));
+        ctx.channel().write(
+                new TextWebSocketFrame(request
+                        + " , 欢迎使用Netty WebSocket服务，现在时刻："
+                        + new java.util.Date().toString()));
 
     }
 
