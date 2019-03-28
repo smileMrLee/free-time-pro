@@ -18,6 +18,7 @@
         <module>nio-simple</module>
         <module>netty-simple</module>
         <module>netty-websocket-simple</module>
+        <module>leetcode-simple</module>
     </modules>
 
 

@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo-util/demo-util.iml" filepath="$PROJECT_DIR$/demo-util/demo-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-simple/ehcache-simple/ehcache-simple.iml" filepath="$PROJECT_DIR$/demo-simple/ehcache-simple/ehcache-simple.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/free-time-pro.iml" filepath="$PROJECT_DIR$/.idea/free-time-pro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-simple/leetcode-simple/leetcode-simple.iml" filepath="$PROJECT_DIR$/demo-simple/leetcode-simple/leetcode-simple.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-simple/netty-simple/netty-simple.iml" filepath="$PROJECT_DIR$/demo-simple/netty-simple/netty-simple.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-simple/nio-simple/nio-simple.iml" filepath="$PROJECT_DIR$/demo-simple/nio-simple/nio-simple.iml" />
     </modules>
