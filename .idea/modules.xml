@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo-simple/common-simple/common-simple.iml" filepath="$PROJECT_DIR$/demo-simple/common-simple/common-simple.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-application/demo-application.iml" filepath="$PROJECT_DIR$/demo-application/demo-application.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-center/demo-center.iml" filepath="$PROJECT_DIR$/demo-center/demo-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-simple/demo-simple.iml" filepath="$PROJECT_DIR$/demo-simple/demo-simple.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-util/demo-util.iml" filepath="$PROJECT_DIR$/demo-util/demo-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-simple/devtools-simple/devtools-simple.iml" filepath="$PROJECT_DIR$/demo-simple/devtools-simple/devtools-simple.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-simple/ehcache-simple/ehcache-simple.iml" filepath="$PROJECT_DIR$/demo-simple/ehcache-simple/ehcache-simple.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/free-time-pro.iml" filepath="$PROJECT_DIR$/.idea/free-time-pro.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-simple/leetcode-simple/leetcode-simple.iml" filepath="$PROJECT_DIR$/demo-simple/leetcode-simple/leetcode-simple.iml" />
