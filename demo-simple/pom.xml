@@ -20,7 +20,9 @@
         <module>leetcode-simple</module>
         <module>common-simple</module>
         <module>devtools-simple</module>
+        <module>guava-jdk8-simple</module>
+        <module>sentinel-example</module>
+        <module>queue-example</module>
     </modules>
-
 
 </project>
