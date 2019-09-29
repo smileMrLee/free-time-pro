@@ -15,6 +15,8 @@
         <module name="demo-application" />
         <module name="dynamic-log-level" />
         <module name="devtools-simple" />
+        <module name="spring-boot-starter-sensitive-words" />
+        <module name="sensitive-words" />
         <module name="common-simple" />
         <module name="spring-boot-starter-log-level" />
         <module name="demo-center" />
@@ -39,8 +41,10 @@
       <module name="netty-websocket-simple" target="1.5" />
       <module name="nio-simple" target="1.5" />
       <module name="queue-example" target="1.5" />
+      <module name="sensitive-words" target="1.5" />
       <module name="sentinel-example" target="1.8" />
       <module name="spring-boot-starter-log-level" target="1.5" />
+      <module name="spring-boot-starter-sensitive-words" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

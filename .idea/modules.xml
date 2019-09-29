@@ -17,8 +17,10 @@
       <module fileurl="file://$PROJECT_DIR$/demo-simple/netty-simple/netty-simple.iml" filepath="$PROJECT_DIR$/demo-simple/netty-simple/netty-simple.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-simple/nio-simple/nio-simple.iml" filepath="$PROJECT_DIR$/demo-simple/nio-simple/nio-simple.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-simple/queue-example/queue-example.iml" filepath="$PROJECT_DIR$/demo-simple/queue-example/queue-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-util/sensitive-words/sensitive-words.iml" filepath="$PROJECT_DIR$/demo-util/sensitive-words/sensitive-words.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-simple/sentinel-example/sentinel-example.iml" filepath="$PROJECT_DIR$/demo-simple/sentinel-example/sentinel-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-util/spring-boot-starter-log-level/spring-boot-starter-log-level.iml" filepath="$PROJECT_DIR$/demo-util/spring-boot-starter-log-level/spring-boot-starter-log-level.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-util/spring-boot-starter-sensitive-words/spring-boot-starter-sensitive-words.iml" filepath="$PROJECT_DIR$/demo-util/spring-boot-starter-sensitive-words/spring-boot-starter-sensitive-words.iml" />
     </modules>
   </component>
 </project>

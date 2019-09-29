@@ -16,6 +16,8 @@
     <modules>
         <module>spring-boot-starter-log-level</module>
         <module>dynamic-log-level</module>
+        <module>spring-boot-starter-sensitive-words</module>
+        <module>sensitive-words</module>
     </modules>
     <dependencyManagement>
         <dependencies>
