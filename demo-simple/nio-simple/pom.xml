@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>demo-simple</artifactId>
-        <groupId>com.evc.freetime</groupId>
+        <groupId>com.free.time</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>free.time.pro</groupId>
+    <groupId>com.free.time</groupId>
     <artifactId>nio-simple</artifactId>
     <version>1.0-SNAPSHOT</version>
 

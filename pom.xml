@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.evc.freetime</groupId>
+    <groupId>com.free.time</groupId>
     <artifactId>free-time-pro</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -25,6 +25,7 @@
     </developers>
     <url>https://github.com/smileMrLee/free-time-pro.git</url>
     <properties>
+        <spring-boot.version>2.0.6.RELEASE</spring-boot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <pomversion>x.0.0-snapshot</pomversion>
         <guava.version>18.0</guava.version>
@@ -44,6 +45,13 @@
     <dependencyManagement>
         <dependencies>
             <!-- 规范:业务组件包请从此处引入,从上到下,遵循新至旧的顺序 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <!-- apollo -->
             <dependency>
                 <groupId>com.ctrip.framework.apollo</groupId>

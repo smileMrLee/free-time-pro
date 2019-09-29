@@ -3,15 +3,30 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.evc.freetime</groupId>
+        <groupId>com.free.time</groupId>
         <artifactId>free-time-pro</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>free.time.pro</groupId>
+    <groupId>com.free.time</groupId>
     <artifactId>demo-util</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>spring-boot-starter-log-level</module>
+        <module>dynamic-log-level</module>
+    </modules>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.free.time</groupId>
+                <artifactId>dynamic-log-level</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
 
 
 </project>

@@ -6,35 +6,47 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo-center" />
+        <module name="concurrent-simple" />
         <module name="nio-simple" />
+        <module name="sentinel-example" />
+        <module name="queue-example" />
         <module name="ehcache-simple" />
-        <module name="demo-util" />
+        <module name="guava-jdk8-simple" />
         <module name="demo-application" />
-        <module name="common-simple" />
-        <module name="netty-simple" />
+        <module name="dynamic-log-level" />
         <module name="devtools-simple" />
+        <module name="common-simple" />
+        <module name="spring-boot-starter-log-level" />
+        <module name="demo-center" />
+        <module name="netty-simple" />
         <module name="leetcode-simple" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="common-simple" target="6" />
+      <module name="concurrent-simple" target="6" />
       <module name="demo-application" target="1.5" />
       <module name="demo-center" target="1.5" />
       <module name="demo-simple" target="1.5" />
       <module name="demo-util" target="1.5" />
       <module name="devtools-simple" target="1.8" />
+      <module name="dynamic-log-level" target="6" />
       <module name="ehcache-simple" target="1.5" />
       <module name="free-time-pro" target="1.5" />
+      <module name="guava-jdk8-simple" target="8" />
       <module name="leetcode-simple" target="7" />
       <module name="netty-simple" target="1.5" />
       <module name="netty-websocket-simple" target="1.5" />
       <module name="nio-simple" target="1.5" />
+      <module name="queue-example" target="1.5" />
+      <module name="sentinel-example" target="1.8" />
+      <module name="spring-boot-starter-log-level" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="devtools-simple" options="-parameters" />
+      <module name="sentinel-example" options="-parameters" />
     </option>
   </component>
 </project>
