@@ -1,3 +1,5 @@
+import com.google.common.collect.Maps;
+
 /**
  * @author changle
  * time 2019-03-28.
@@ -76,7 +78,7 @@ public class DupDigistsAtMostN {
 
     public static void main(String[] args) {
         DupDigistsAtMostN cal = new DupDigistsAtMostN();
-        int sum = cal.numDupDigitsAtMostN(100);
+        int sum = cal.numDupDigitsAtMostN(20);
         System.out.println(sum);
     }
 
